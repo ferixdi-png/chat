@@ -249,6 +249,25 @@
                 text-wrap: balance;
             }
         }
+        
+        .funnel-connector {
+            position: relative;
+        }
+        .funnel-connector::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -12px;
+            width: 24px;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(236, 72, 153, 0.6), rgba(236, 72, 153, 0.1));
+            transform: translateY(-50%);
+        }
+        @media (max-width: 640px) {
+            .funnel-connector::after {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body class="text-gray-200 antialiased">
@@ -824,6 +843,310 @@
                         ты получаешь автоматически и без доплат. Я каждый день добавляю свежую инфу, 
                         чтобы мои люди были на шаг впереди.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Стратегический фокус -->
+    <section class="py-16 sm:py-24 md:py-32 bg-black relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-5 sm:px-6">
+            <div class="text-center mb-10 sm:mb-14 md:mb-16 reveal">
+                <div class="inline-block px-4 sm:px-6 py-2 sm:py-3 glass rounded-full text-pink-300 text-xs sm:text-sm font-semibold mb-4 sm:mb-6 border border-pink-500/20">
+                    СТРАТЕГИЧЕСКИЙ ФОКУС
+                </div>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 serif text-white leading-tight">
+                    Это не про <span class="text-gradient">красивые картинки</span>
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed readable-text">
+                    Рынок перенасыщен советами по «красивому визуалу» и базовым промптам. Но эстетика сама по себе не формирует LTV, не снижает стоимость лида и не оптимизирует unit-экономику.
+                </p>
+            </div>
+            
+            <div class="reveal mb-10 sm:mb-14">
+                <div class="glass-light p-6 sm:p-8 md:p-10 rounded-2xl border border-pink-500/30 text-center">
+                    <p class="text-xl sm:text-2xl md:text-3xl font-bold text-white leading-snug">
+                        Наша конечная цель — <span class="text-gradient">предсказуемая система монетизации</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-4 sm:gap-6 mb-10 sm:mb-14 reveal">
+                <div class="door-card rounded-2xl p-5 sm:p-6 md:p-8">
+                    <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                        <span class="text-xl font-bold text-white">01</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Ликвидный актив</h3>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed readable-text">
+                        Трансформировать ваш продукт или экспертизу в ликвидный актив, который рынок будет покупать.
+                    </p>
+                </div>
+                <div class="door-card rounded-2xl p-5 sm:p-6 md:p-8">
+                    <div class="w-12 h-12 bg-gradient-to-br from-rose-500 to-pink-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                        <span class="text-xl font-bold text-white">02</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Стабильный cash flow</h3>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed readable-text">
+                        Обеспечить стабильный денежный поток за счёт системного подхода, а не случайных удачных запусков.
+                    </p>
+                </div>
+                <div class="door-card rounded-2xl p-5 sm:p-6 md:p-8">
+                    <div class="w-12 h-12 bg-gradient-to-br from-fuchsia-500 to-pink-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                        <span class="text-xl font-bold text-white">03</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Архитектура воронки</h3>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed readable-text">
+                        Сформировать архитектурное понимание воронки продаж: конверсии, точки касания, маржинальность.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="reveal mb-10 sm:mb-14">
+                <div class="highlight-box p-5 sm:p-6 md:p-8 rounded-r-xl">
+                    <p class="text-xl sm:text-2xl md:text-3xl leading-snug font-semibold text-white">
+                        Ключевой сдвиг парадигмы — <span class="text-gradient">интеграция ИИ в саму ДНК ваших продаж</span>
+                    </p>
+                    <p class="text-gray-400 text-sm sm:text-base md:text-lg mt-3 sm:mt-4 leading-relaxed readable-text">
+                        Большинство использует нейросети как точечный инструмент: сгенерировать текст, нарисовать изображение. 
+                        Мы рассматриваем ИИ как <span class="text-white font-semibold">сквозную инфраструктуру</span>, 
+                        работающую на каждом этапе Customer Journey Map.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="reveal mb-10 sm:mb-14">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 serif text-white text-center">
+                    ИИ на каждом этапе <span class="text-gradient">Customer Journey Map</span>
+                </h3>
+                <div class="grid sm:grid-cols-2 gap-4 sm:gap-5">
+                    <div class="glass-light p-5 sm:p-6 rounded-xl border border-pink-500/20">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-pink-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-pink-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-white font-semibold mb-1">Предиктивный анализ</div>
+                                <div class="text-gray-400 text-sm leading-relaxed readable-text">Гиперсегментация трафика и предиктивный анализ аудитории</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-light p-5 sm:p-6 rounded-xl border border-pink-500/20">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-pink-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-pink-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-white font-semibold mb-1">Автоматизация смыслов</div>
+                                <div class="text-gray-400 text-sm leading-relaxed readable-text">Создание контента для прогрева на автопилоте</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-light p-5 sm:p-6 rounded-xl border border-pink-500/20">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-pink-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-pink-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-white font-semibold mb-1">Аналитика обратной связи</div>
+                                <div class="text-gray-400 text-sm leading-relaxed readable-text">Точечная отработка возражений через нейросети</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-light p-5 sm:p-6 rounded-xl border border-pink-500/20">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-pink-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-pink-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-white font-semibold mb-1">Триггерные механики</div>
+                                <div class="text-gray-400 text-sm leading-relaxed readable-text">Выстраивание триггеров для закрытия сделок</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reveal">
+                <div class="bg-gradient-to-br from-pink-950/20 to-black p-6 sm:p-8 md:p-10 rounded-2xl border border-pink-500/30 text-center">
+                    <p class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-snug mb-3">
+                        Мы собираем ваш личный бренд в единую экосистему
+                    </p>
+                    <p class="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed readable-text max-w-3xl mx-auto">
+                        Маркетинговые фреймворки, умноженные на вычислительные мощности ИИ. 
+                        На выходе — не просто набор нейросетевых инструментов, а готовая, масштабируемая бизнес-модель, 
+                        где технологии напрямую конвертируются в вашу прибыль.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Архитектура системы -->
+    <section class="py-16 sm:py-24 md:py-32 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6">
+            <div class="text-center mb-10 sm:mb-14 md:mb-16 reveal">
+                <div class="inline-block px-4 sm:px-6 py-2 sm:py-3 glass rounded-full text-pink-300 text-xs sm:text-sm font-semibold mb-4 sm:mb-6 border border-pink-500/20">
+                    АРХИТЕКТУРА СИСТЕМЫ
+                </div>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 serif text-white leading-tight">
+                    Это не набор уроков.<br>
+                    <span class="text-gradient">Это чертежи механизма</span>
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed readable-text">
+                    Прямо сейчас я активно наполняю бота, добавляю новые ветки, записываю материалы. 
+                    Со стороны это может выглядеть как набор разных тем. Но финальная цель — одна автономная система продаж.
+                </p>
+            </div>
+            
+            <div class="reveal mb-10 sm:mb-14">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 serif text-white text-center">
+                    Как это будет работать <span class="text-gradient">в итоге</span>
+                </h3>
+                <p class="text-gray-400 text-sm sm:text-base md:text-lg text-center max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed readable-text">
+                    Не 12 отдельных инструкций, а сквозная воронка, где каждый элемент жёстко сцеплен с другим:
+                </p>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+                    <!-- 1. Трафик -->
+                    <div class="door-card rounded-2xl p-5 sm:p-6 relative overflow-hidden funnel-connector">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 rounded-full blur-3xl"></div>
+                        <div class="relative">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                                    <span class="text-lg sm:text-xl font-bold text-white">01</span>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] sm:text-xs text-pink-400 font-semibold uppercase tracking-wider">Двигатель</div>
+                                    <div class="text-base sm:text-lg font-bold text-white leading-tight">Трафик</div>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed readable-text mb-3">
+                                Meme Engine, сеть аккаунтов, каналы привлечения внимания — генерируют поток входящего трафика.
+                            </p>
+                            <div class="text-[10px] sm:text-xs text-pink-400/80 italic font-medium">Поток внимания →</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2. Фильтр и прогрев -->
+                    <div class="door-card rounded-2xl p-5 sm:p-6 relative overflow-hidden funnel-connector">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-rose-500/10 rounded-full blur-3xl"></div>
+                        <div class="relative">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-rose-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                                    <span class="text-lg sm:text-xl font-bold text-white">02</span>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] sm:text-xs text-rose-400 font-semibold uppercase tracking-wider">Фильтр и прогрев</div>
+                                    <div class="text-base sm:text-lg font-bold text-white leading-tight">Бот и AI-видео</div>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed readable-text mb-3">
+                                Ловят трафик и превращают холодных зрителей в тёплых лидов с помощью цифрового аватара.
+                            </p>
+                            <div class="text-[10px] sm:text-xs text-rose-400/80 italic font-medium">Внимание → интерес →</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 3. Отдел продаж -->
+                    <div class="door-card rounded-2xl p-5 sm:p-6 relative overflow-hidden funnel-connector">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-fuchsia-500/10 rounded-full blur-3xl"></div>
+                        <div class="relative">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-fuchsia-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                                    <span class="text-lg sm:text-xl font-bold text-white">03</span>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] sm:text-xs text-fuchsia-400 font-semibold uppercase tracking-wider">Отдел продаж 24/7</div>
+                                    <div class="text-base sm:text-lg font-bold text-white leading-tight">AI-агенты</div>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed readable-text mb-3">
+                                Подключаются к боту, отвечают на вопросы, снимают возражения и доводят до покупки.
+                            </p>
+                            <div class="text-[10px] sm:text-xs text-fuchsia-400/80 italic font-medium">Интерес → сделка →</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 4. Касса -->
+                    <div class="door-card rounded-2xl p-5 sm:p-6 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl"></div>
+                        <div class="relative">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                                    <span class="text-lg sm:text-xl font-bold text-white">04</span>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] sm:text-xs text-purple-400 font-semibold uppercase tracking-wider">Касса</div>
+                                    <div class="text-base sm:text-lg font-bold text-white leading-tight">Telegram-магазин</div>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed readable-text mb-3">
+                                Принимает оплату и автоматически выдаёт доступ. Полностью автономная финальная точка.
+                            </p>
+                            <div class="text-[10px] sm:text-xs text-purple-400/80 italic font-medium">Сделка → прибыль ✓</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reveal mb-10 sm:mb-14">
+                <div class="highlight-box p-5 sm:p-6 md:p-8 rounded-r-xl">
+                    <p class="text-xl sm:text-2xl md:text-3xl leading-snug font-semibold text-white mb-3 sm:mb-4">
+                        Главная ценность — <span class="text-gradient">не навыки, а архитектура</span>
+                    </p>
+                    <p class="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed readable-text mb-4">
+                        Многие учат просто «навыкам»: как снять ролик, как написать код, как настроить бота. 
+                        Но навык без системы не приносит денег.
+                    </p>
+                    <p class="text-white text-base sm:text-lg font-semibold leading-relaxed mb-4">
+                        К моменту запуска вы получите готовый пошаговый алгоритм, как собрать свою личную машину, которая:
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-3 mt-4">
+                        <div class="flex items-center gap-3 text-gray-300 text-sm sm:text-base">
+                            <svg class="w-5 h-5 text-pink-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Сама привлекает людей</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-300 text-sm sm:text-base">
+                            <svg class="w-5 h-5 text-pink-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Сама их прогревает</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-300 text-sm sm:text-base">
+                            <svg class="w-5 h-5 text-pink-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Сама продаёт</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-300 text-sm sm:text-base">
+                            <svg class="w-5 h-5 text-pink-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Сама выдаёт продукт</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reveal">
+                <div class="glass-light p-6 sm:p-8 md:p-10 rounded-2xl border border-pink-500/30 text-center">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-pink-950/30 text-pink-300 rounded-full text-xs sm:text-sm font-semibold mb-4 border border-pink-500/20">
+                        <span class="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></span>
+                        ЭТАП СБОРКИ
+                    </div>
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4">
+                        Что сейчас происходит
+                    </h3>
+                    <p class="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed readable-text max-w-3xl mx-auto mb-4">
+                        Я нахожусь на этапе сборки. Тестирую каждую связку, проверяю, как одна ветка перетекает в другую, 
+                        чтобы в итоге у вас была чёткая, выверенная дорожная карта, а не каша в голове.
+                    </p>
+                    <p class="text-white text-base sm:text-lg font-semibold leading-relaxed mb-4">
+                        Скоро все эти ветки сойдутся в одну точку. Следите за обновлениями.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-pink-500/20">
+                        <p class="text-pink-400 font-semibold text-base sm:text-lg md:text-xl italic serif">
+                            Мы не просто учимся. Мы строим систему.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
